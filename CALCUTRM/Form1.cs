@@ -23,9 +23,15 @@ namespace CALCUTRM
         }
         private decimal trmActual = 0;
         private bool _formateando = false;
-        private void Form1_Load(object sender, EventArgs e)
+        private async void Form1_Load(object sender, EventArgs e)
         {
-
+            bool enabled = await RemoteControl.IsEnabledAsync();
+            if (!enabled)
+            {
+                MessageBox.Show("Esta aplicación ha sido deshabilitada por el administrador.");
+                Application.Exit();
+                return; // muy importante para evitar que el código siga
+            }
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -225,6 +231,16 @@ namespace CALCUTRM
                 Clipboard.SetText(lblResul2.Text);
                 Toast.Show("¡Copiado!", 700);  // << duración en milisegundos (rápido)
             }
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void btnMin_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
         }
     }
 }

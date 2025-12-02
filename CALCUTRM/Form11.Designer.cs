@@ -59,5 +59,25 @@ namespace CALCULA_TRM {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Point similar a {X=17,Y=17}.
+        /// </summary>
+        internal static System.Drawing.Point guna2DragControl1_TrayLocation {
+            get {
+                object obj = ResourceManager.GetObject("guna2DragControl1.TrayLocation", resourceCulture);
+                return ((System.Drawing.Point)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Point similar a {X=175,Y=17}.
+        /// </summary>
+        internal static System.Drawing.Point guna2Elipse1_TrayLocation {
+            get {
+                object obj = ResourceManager.GetObject("guna2Elipse1.TrayLocation", resourceCulture);
+                return ((System.Drawing.Point)(obj));
+            }
+        }
     }
 }
