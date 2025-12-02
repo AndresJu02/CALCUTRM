@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 public class RemoteControl
 {
     private const string statusUrl =
-        "https://raw.githubusercontent.com/AndresJu02/TIENDA-DID/refs/heads/master/TIENDA%20DID/main/status.txt";
+        "https://raw.githubusercontent.com/AndresJu02/CALCUTRM/refs/heads/master/CALCUTRM/main/status.txt";
 
     private static readonly HttpClient http = new HttpClient();
 
