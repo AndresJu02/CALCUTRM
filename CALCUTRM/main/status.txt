@@ -1,5 +1,2 @@
-<<<<<<< HEAD
 enabled=0
-=======
-enabled=1
->>>>>>> actu
+
